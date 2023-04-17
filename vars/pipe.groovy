@@ -1,11 +1,11 @@
-def call(){
+def call(String nombre){
     pipeline {
         agent any
 
         stages {
             stage('Paso 1') {
                 steps {
-                    echo "Hola" 
+                    echo "Hola"+ nombre 
                     
                 }
             }
