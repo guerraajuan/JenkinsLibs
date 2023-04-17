@@ -5,13 +5,13 @@ def call(Map params ){
         stages {
             stage('Paso 1') {
                 steps {
-                    echo "Hola: ${params.nombre}"
+                    echo "Hola:"+ params.nombre
                     
                 }
             }
             stage('Paso 2') {
                 steps {
-                    echo "Tu apellido es:  ${params.apellido}"
+                    echo "Tu apellido es:" + params.apellido
                     
                 }
             }
