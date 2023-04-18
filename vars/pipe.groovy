@@ -6,7 +6,6 @@ def call(Map param){
             stage('Saludo') {
                 steps {
                     echo "-------------------------------------------"
-                    echo "Comienza Saludo desde test con parametro entre llaves"
                     echo "Hola: ${param.nombre}" 
                     echo "Termina Saludo"
                     echo "-------------------------------------------"
@@ -16,9 +15,8 @@ def call(Map param){
             stage('Despedida') {
                 steps {
                     echo "-------------------------------------------"
-                    echo "Comienza Despedida desde test con parametro entre llaves"
                     echo "Chao:  ${param.apellido}"
-                    echo "Termina Saludo"
+                    echo "Termina Despedida"
                     echo "-------------------------------------------"
                     
                 }
