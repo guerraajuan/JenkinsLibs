@@ -7,7 +7,7 @@ def call(Map param){
                 steps {
                     echo "-------------------------------------------"
                     echo "Comienza Saludo desde test"
-                    echo "Hola: " + param.nombre 
+                    echo "Hola: ${param.nombre}" 
                     echo "Termina Saludo"
                     echo "-------------------------------------------"
                     
