@@ -5,11 +5,7 @@ def call(Map param){
         stages {
             stage('Saludo') {
                 steps {
-                    echo "-------------------------------------------"
-                    echo "Hola: ${param.nombre}" 
-                    echo "Termina Saludo"
-                    echo "-------------------------------------------"
-                    
+                    saludo(${param.nombre})
                 }
             }
             stage('Despedida') {
@@ -23,4 +19,22 @@ def call(Map param){
             }
         }
     }
+}
+
+def saludo(nombre){
+    def nameList = [
+        'Juan',
+        'Jose',
+        'Carlos',
+        'Francisco',
+        'Pedro'
+
+    ]
+    if (nombre in nameList){
+        echo "---comienza saludo desde funcion----------------------------------------"
+        echo "Hola: ${nombre}" 
+        echo "-----Termina saludo desde funcion---------------------------------------"
+
+    }
+    else echo"Su nombre no se encuentra disponible en el listado $nameList"
 }
