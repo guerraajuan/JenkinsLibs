@@ -21,7 +21,7 @@ def call(Map param){
     }
 }
 
-def saludo(nombre){
+def saludo(String nombre){
     def nameList = [
         'Juan',
         'Jose',
@@ -32,9 +32,9 @@ def saludo(nombre){
     ]
     if (nombre in nameList){
         echo "---comienza saludo desde funcion----------------------------------------"
-        echo "Hola: ${nombre}" 
+        echo "Hola: $nombre" 
         echo "-----Termina saludo desde funcion---------------------------------------"
 
     }
-    else echo"Su nombre: ${nombre} no se encuentra disponible en el listado $nameList"
+    else echo"Su nombre: $nombre no se encuentra disponible en el listado $nameList"
 }
