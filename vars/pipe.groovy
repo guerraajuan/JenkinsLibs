@@ -5,7 +5,7 @@ def call(Map param){
         stages {
             stage('Saludo') {
                 steps {
-                    saludo(param.nombre)
+                    saludo("${param.nombre}")
                 }
             }
             stage('Despedida') {
@@ -36,5 +36,5 @@ def saludo(nombre){
         echo "-----Termina saludo desde funcion---------------------------------------"
 
     }
-    else echo"Su nombre no se encuentra disponible en el listado $nameList"
+    else echo"Su nombre: ${nombre} no se encuentra disponible en el listado $nameList"
 }
