@@ -5,7 +5,7 @@ def call(Map param){
         stages {
             stage('Saludo') {
                 steps {
-                    saludo(param.nombre)
+                    saludo("${param.nombre}")
                 }
             }
             stage('Despedida') {
