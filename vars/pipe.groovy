@@ -11,10 +11,10 @@ def call(Map param){
                     echo "Termina Saludo sin ajuste"
                     echo "agrego desde github"
                     echo "-------------------------------------------"
-                    script {
-                      def output = new helpers.Output()
-                      output.SaludoNombre(param.nombre)
-                    }
+                    // script {
+                    //   def output = new helpers.Output()
+                    //   output.SaludoNombre(param.nombre)
+                    // }
                     
                 }
             }
