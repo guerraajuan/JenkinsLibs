@@ -7,6 +7,7 @@ def call(Map param){
                 steps {
                     echo "-------------------------------------------"
                     echo "Hola: ${param.nombre}" 
+                    echo "Edad: ${param.edad}" 
                     echo "Termina Saludo sin ajuste"
                     echo "agrego desde github"
                     echo "-------------------------------------------"
