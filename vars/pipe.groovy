@@ -20,6 +20,7 @@ def call(Map param){
                     echo "Chao:  ${param.apellido}"
                     echo "Termina Despedida"
                     echo "-------------------------------------------"
+                    figlet "FIN DE PIPELINE"
                     
                 }
             }
