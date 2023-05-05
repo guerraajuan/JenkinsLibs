@@ -1,8 +1,4 @@
 def call(Map param){
-    def output	= new helpers.Output()
-
-
-
     pipeline {
         agent any
 
@@ -15,7 +11,11 @@ def call(Map param){
                     echo "Termina Saludo sin ajuste"
                     echo "agrego desde github"
                     echo "-------------------------------------------"
-                    output.SaludoNombre(param.nombre)
+                    script {
+                      def output = new helpers.Output()
+                      output.SaludoNombre(param.nombre)
+                    }
+                    
                 }
             }
             stage('Despedida') {
